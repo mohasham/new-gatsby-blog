@@ -23,7 +23,17 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    /*I added this comment if we want to access graphql node files markdown we should write this code */
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdowns`,
+        path: `${__dirname}/src/markdown-pages`,
+      },
+    },//here I added gatsby-plugin-styled-components package to include styled components
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
